@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>mineSweeper</title>
+    <link rel="stylesheet" href="mineSweep.css">
+  </head>
+
+  <body onload="customMapGen()">
+
+
+    <div class="backgr">
+      <div class="sweepHead">
+        <span class="bombCount">00</span>
+        <button class="restart" onclick="customMapGen()"></button>
+        <span class="timer">00</span>
+      </div>
+      <div class="table" cellspacing="0"></div>
+    </div><br/>
+
+    <input placeholder="Width" class="width"></input><br />
+    <input placeholder="Height" class="height"></input><br />
+    <button onclick="customMapGen()">Generate</button>
+
+    <script src="mineSweep.js"></script>
+  </body>
+</html>
